@@ -1,0 +1,22 @@
+{
+  "name": "react-mvp-ts",
+  "version": "1.0.0",
+  "description": "Bare minimum React project",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexburner/react-mvp-ts.git"
+  },
+  "scripts": {
+    "dev": "rm -rf ./dev && parcel --out-dir dev ./src/index.html",
+    "build": "rm -rf ./docs && parcel build --out-dir ./docs --public-url ./ ./src/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "parcel-bundler": "1.12.4"
+  },
+  "dependencies": {
+    "bootstrap": "4.5.0",
+    "react": "16.13.1",
+    "react-dom": "16.13.1"
+  }
+}
