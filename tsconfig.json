@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    /* Make modules work good */
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "module": "esnext",
+    "target": "esnext",
+    /* Make JSX work */
+    "jsx": "react",
+    /* Make code good */
+    "strict": true
+  },
+  "include": ["src"]
+}
