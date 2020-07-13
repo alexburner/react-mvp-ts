@@ -9,13 +9,23 @@
   "scripts": {
     "dev": "rm -rf ./dev && parcel --out-dir dev ./src/index.html",
     "types": "tsc --watch --noEmit",
+    "format": "npm run eslint && npm run prettier",
+    "prettier": "prettier --write 'src/**/*.+(ts|tsx|json|html|css)'",
+    "eslint": "eslint . --ext .ts,.tsx --fix",
     "build": "rm -rf ./docs && parcel build --out-dir ./docs --public-url ./ ./src/index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
     "@types/react": "16.9.41",
     "@types/react-dom": "16.9.8",
+    "@typescript-eslint/eslint-plugin": "3.6.1",
+    "@typescript-eslint/parser": "3.6.1",
+    "eslint": "7.4.0",
+    "eslint-config-prettier": "6.11.0",
+    "eslint-plugin-react": "7.20.3",
+    "eslint-plugin-react-hooks": "4.0.8",
     "parcel-bundler": "1.12.4",
+    "prettier": "2.0.5",
     "typescript": "3.9.6"
   },
   "dependencies": {
